@@ -118,6 +118,7 @@ class vault (
   $arch                                = $::vault::params::arch,
   Optional[Boolean] $enable_ui         = $::vault::params::enable_ui,
   Optional[String] $api_addr           = undef,
+  $gac                                 = $::vault::params::gac,
   Hash $extra_config                   = {},
 ) inherits ::vault::params {
 

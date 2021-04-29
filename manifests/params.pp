@@ -35,6 +35,10 @@ class vault::params {
     },
   }
 
+  # If the storage backend is Google Cloud Storage
+  # set GOOGLE_APPLICATION_CREDENTIALS
+  $gac                 = ''
+
   $enable_ui          = undef
 
   # These should always be undef as they are optional settings that
